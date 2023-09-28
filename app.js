@@ -3,7 +3,7 @@ const ol = document.querySelector('ol');
 let todo = [];
 function addTodo(e) {
     e.preventDefault();
-    ol.innerHTML = ''
+    // ol.innerHTML = ''
     switch (input.value) {
         case '':
             alert('Enter task')
@@ -12,12 +12,13 @@ function addTodo(e) {
         default:
             // console.log(input.value);
             todo.push(input.value);
+            ol.innerHTML = ''
             // console.log(todo);
             for (let i = 0; i < todo.length; i++) {
                 //    console.log(todo[i]);
-                ol.innerHTML += ` <li>${todo[i]}</li>
-           <button onclick='deleteTodo(${i})'>Delete Task</button>
-           <button onclick='editTodo(${i})'>Edit Task</button> `
+                ol.innerHTML += ` <li>${todo[i]}<br>
+           <button onclick='deleteTodo(${i})' class="del">Delete </button>
+           <button onclick='editTodo(${i})' class="edit">Edit </button> `
             }
     }
 
@@ -32,8 +33,8 @@ function deleteTodo(index) {
     for (let i = 0; i < todo.length; i++) {
         //    console.log(todo[i]);
         ol.innerHTML += ` <li>${todo[i]}</li>
-    <button onclick='deleteTodo(${i})'>Delete Task</button>
-    <button onclick='editTodo(${i})'>Edit Task</button> `
+    <button onclick='deleteTodo(${i})' class="del">Delete </button>
+    <button onclick='editTodo(${i})' class="edit">Edit </button>`
     }
 
 }
@@ -45,8 +46,8 @@ function editTodo(index) {
     for (let i = 0; i < todo.length; i++) {
         //    console.log(todo[i]);
         ol.innerHTML += ` <li>${todo[i]}</li>
-    <button onclick='deleteTodo(${i})'>Delete Task</button>
-    <button onclick='editTodo(${i})'>Edit Task</button> `
+    <button onclick='deleteTodo(${i}) ' class="del">Delete </button>
+    <button onclick='editTodo(${i})' class="edit">Edit </button> `
     }
     // console.log(todo);
 

@@ -5,54 +5,99 @@
 }
 
 body {
-    font-family: 'Rubik Iso', cursive;
-    background-image: url(./assets/bg.jpg);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #153677, #4e085f);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    text-align: center;
     padding: 10px;
 }
 
 .main-head {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin-top: 50px;
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto 0px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .head {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .todo-img {
-    height: 80px;
-    width: 80px;
-    background-color: aqua;
+    width: 50px;
     background: none;
     background: transparent;
 
 }
-.form{
-    margin-top: 30px;
-    
+
+.form {
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto 0px;
+    padding: 10px;
+    align-items: center;
+
 }
 
 .todo {
-    padding: 12px 0px 12px 10px;
-    font-family: 'Rubik Iso', cursive;
-    background: transparent;
-    border-radius: 20px;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 14px 80px 10px 12px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(128, 128, 128, 0.834);
 
 }
 
 .add {
-    padding: 12px 35px 12px 35px;
-    font-family: 'Rubik Iso', cursive;
+    font-size: 25px;
+    padding: 5px 20px 7px;
+    border-radius: 12px;
     border: none;
-    border-radius: 30px;
-    font-size: 30px;
-    background-color: aqua;
+    background: rgb(255, 132, 0);
+    font-weight: 900;
+    color: #fff;
+  
+
+}
+.ol{
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto 0px;
+    padding: 20px 10px 10px 30px;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 20px;
+    display: flex;
+   
+
+}
+.del{
+    font-size: 15px;
+    padding: 5px 20px 5px;
+    background: rgb(255, 132, 0);
+    font-weight: 900;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    margin-top: 5px;
+    
+  
+}
+.edit{
+    font-size: 15px;
+    padding: 5px 20px 5px;
+    background: rgb(255, 132, 0);
+    font-weight: 900;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    justify-content: center;
+   
+
 }
